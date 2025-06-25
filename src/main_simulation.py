@@ -24,7 +24,7 @@ orders = {
 }
 
 def run_simulation(records):
-    for kline in records: # records[14180:]
+    for kline in records[14180:]: # records[14180:]
         if not all(k in kline for k in ("s", "o", "c")):
             continue
         print("Внешний принт свечи:")
